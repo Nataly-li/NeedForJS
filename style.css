@@ -1,9 +1,180 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.start {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-top: 10%;
+  padding: 10px;
+  width: 230px;
+  height: 70px;
+  background: rgb(238, 18, 29);
+  border: none;
+  border-radius: 10px;
+  color: #f0f9f9;
+  font-size: 28px;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.start:hover {
+  box-shadow: 0 0 8px 6px rgb(207, 238, 220);
+  transform: translateY(-3px);
+  background: rgb(20, 175, 33);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
 .hide {
   display: none;
 }
 
-.car {
+.car,
+.enemy {
   width: 50px;
   height: 100px;
   background: transparent url(./image/player2.png) center / cover no-repeat;
+  position: absolute;
+  left: 225px;
+  bottom: 15px;
+}
+
+.game-area {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background-color: rgb(35, 49, 54);
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: #fff;
+  left: 245px;
 }
